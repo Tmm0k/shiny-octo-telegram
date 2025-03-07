@@ -47,22 +47,22 @@ export default function Hero() {
             </section>
 
             {/* Desktop */}
-            <section className="hidden md:block w-full bg-[#FDBE4F] py-10 overflow-hidden">
-                <div className="max-w-[1280px] mx-auto px-8 relative">
-                    <div className="grid grid-cols-12 items-center relative">
+            <section className="hidden md:block w-full bg-[#FDBE4F] py-10">
+                <div className="max-w-[1280px] mx-auto px-8">
+                    <div className="grid grid-cols-12 items-center">
                         <div className="col-span-5 pr-8">
-                            <h3 className="text-[21px] leading-tight mb-3 text-black font-[family-name:var(--font-geologica)] font-semibold relative z-10">
+                            <h3 className="text-[21px] leading-tight mb-3 text-black font-[family-name:var(--font-geologica)] font-semibold">
                                 Support Your Dog's Anal Gland Health with Filaquin™
                             </h3>
-                            <p className="text-[14px] leading-snug mb-2 text-black font-[family-name:var(--font-roboto-condensed)] font-light relative z-10">
+                            <p className="text-[14px] leading-snug mb-2 text-black font-[family-name:var(--font-roboto-condensed)] font-light">
                                 Filaquin™ features NMXFBR4™, our proprietary blend of yeast extract (beta-glucan), apple fiber, yeast culture (postbiotic), and psyllium husk fiber. This combination offers both insoluble and soluble fibers along with prebiotics and postbiotics. Fiber helps support normal stool consistency while prebiotics and postbiotics help support digestive health.
                             </p>
-                            <span className="text-[14px] leading-none text-black block font-[family-name:var(--font-roboto-condensed)] font-bold relative z-10">
+                            <span className="text-[14px] leading-none text-black block font-[family-name:var(--font-roboto-condensed)] font-bold">
                                 Available Exclusively From Your Veterinarian
                             </span>
                         </div>
                         <div className="col-span-3 flex justify-center">
-                            <div className="w-[60%] -mt-8 relative z-10">
+                            <div className="w-[60%] -mt-8">
                                 <Image
                                     src="/filaquin-product-pouch-hero.webp"
                                     alt="Filaquin Product Pouch"
@@ -73,15 +73,17 @@ export default function Hero() {
                                 />
                             </div>
                         </div>
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] z-20">
-                            <Image
-                                src="/dog-x-dt.webp"
-                                alt="Hero Dog"
-                                width={1200}
-                                height={900}
-                                className="object-contain w-full"
-                                priority
-                            />
+                        <div className="col-span-4 absolute right-0 flex items-center justify-end">
+                            <div className="w-full">
+                                <Image
+                                    src="/dog-x-dt.webp"
+                                    alt="Hero Dog"
+                                    width={800}
+                                    height={600}
+                                    className="object-contain w-full"
+                                    priority
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
