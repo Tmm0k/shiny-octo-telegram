@@ -47,10 +47,10 @@ export default function Hero() {
             </section>
 
             {/* Desktop */}
-            <section className="hidden md:block w-full bg-[#FDBE4F] py-10">
+            <section className="hidden md:block w-full bg-[#FDBE4F] py-10 md:py-16 overflow-hidden">
                 <div className="max-w-[1280px] mx-auto px-8">
-                    <div className="grid grid-cols-12 items-center">
-                        <div className="col-span-5 pr-8">
+                    <div className="relative grid grid-cols-12 items-center min-h-[300px]">
+                        <div className="col-span-6 pr-8">
                             <h3 className="text-[21px] leading-tight mb-3 text-black font-[family-name:var(--font-geologica)] font-semibold">
                                 Support Your Dog's Anal Gland Health with Filaquin™
                             </h3>
@@ -61,34 +61,32 @@ export default function Hero() {
                                 Available Exclusively From Your Veterinarian
                             </span>
                         </div>
-                        <div className="col-span-3 flex justify-center">
-                            <div className="w-[60%] -mt-8">
+                        <div className="col-span-3 flex justify-center relative z-10">
+                            <div className="w-[280px]">
                                 <Image
                                     src="/filaquin-product-pouch-hero.webp"
                                     alt="Filaquin Product Pouch"
-                                    width={300}
-                                    height={600}
+                                    width={280}
+                                    height={560}
                                     className="object-contain w-full"
                                     priority
                                 />
                             </div>
                         </div>
-                        <div className="col-span-4 absolute right-0 flex items-center justify-end">
-                            <div className="w-full">
-                                <Image
-                                    src="/dog-x-dt.webp"
-                                    alt="Hero Dog"
-                                    width={800}
-                                    height={600}
-                                    className="object-contain w-full"
-                                    priority
-                                />
-                            </div>
+                        <div className="absolute -right-50 -top-[16%] w-[600px] z-20">
+                            <Image
+                                src="/dog-x-dt.webp"
+                                alt="Hero Dog"
+                                width={600}
+                                height={600}
+                                className="object-contain w-full"
+                                priority
+                            />
                         </div>
                     </div>
                 </div>
             </section>
-            <div className="h-16 sm:h-24 bg-white w-full" />
+            <div className="h-16 sm:h-24 md:h-48 bg-white w-full relative md:-mt-20" />
         </div>
     );
 }
