@@ -62,18 +62,20 @@ export default function Hero() {
                             </span>
                         </div>
                         <div className="col-span-3 flex justify-center relative z-10">
-                            <div className="w-[280px]">
-                                <Image
-                                    src="/filaquin-product-pouch-hero.webp"
-                                    alt="Filaquin Product Pouch"
-                                    width={280}
-                                    height={560}
-                                    className="object-contain w-full"
-                                    priority
-                                />
+                            <div className="relative md:top-16">
+                                <div className="w-[280px] md:h-[300px]">
+                                    <Image
+                                        src="/filaquin-product-pouch-hero.webp"
+                                        alt="Filaquin Product Pouch"
+                                        width={280}
+                                        height={560}
+                                        className="object-contain w-full h-full"
+                                        priority
+                                    />
+                                </div>
                             </div>
                         </div>
-                        <div className="absolute -right-50 -top-[16%] w-[600px] z-20">
+                        <div className="absolute -right-50 -top-[30%] w-[600px] z-20">
                             <Image
                                 src="/dog-x-dt.webp"
                                 alt="Hero Dog"
