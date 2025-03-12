@@ -32,7 +32,7 @@ export default function Hero() {
                                 priority
                             />
                         </div>
-                        <div className="absolute right-0 -top-20 sm:-right-12 sm:top-[20px] w-[75%] sm:w-[55%]">
+                        <div className="absolute z-10 right-0 -top-20 sm:-right-12 sm:top-[20px] w-[75%] sm:w-[55%]">
                             <Image
                                 src="/dogb-x-mb.webp"
                                 alt="Hero Dog"
